@@ -1,0 +1,22 @@
+exclude:
+    - "/vendor/"
+    - LICENSE
+    - README.md
+    - package.json
+    - package-lock.json
+    - yarn.lock
+    
+#Site Settings
+title: Cornerstone Community Development Corporation
+email: systemadmin@cdccornerstone.org
+description: Community Development Corporation site
+url: "https://kens-coding-kayceejjay.c9users.io/" # actual site url https://kayceejjay.github.io not CNAME if one used; http://localhost:63342/Cornerstone/Cornerstone/ https://kens-coding-kayceejjay.c9users.io/ in development
+baseurl: ""
+
+#Build Settings
+markdown: kramdown
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
