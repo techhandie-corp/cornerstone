@@ -549,13 +549,10 @@ a.caption { /* controls the caption */
 /* Calendar */
 #community_calender {
     background: #222C3B;/*#222C3B 4386fc #c9e9f6*/
-    // border: 1px dotted red;
     margin-top: -20px;
-    // margin-bottom: 30px; 
     width: 100%;
     height: 1290px;
     content: center;
-    // padding-top: 30px;
     h1 {
         color: $water;
     }
@@ -571,20 +568,21 @@ a.caption { /* controls the caption */
 }
 
 /* Events Table */
-div.events-wrap {
+.events-wrap {
     background: #222C3B;
     width: 100%;
     height: 100%;
-    padding-top:15px;
+    padding-top: 20px;
     margin-top: -20px;
-    margin-bottom: 0%;       
+    margin-bottom: 30px;
     text-align: center;
     border-top: 2px solid #4C4F54;
     box-shadow: 0 -5px 10px 5px $water; 
 }
 
 .events-titles {
-    padding: 0 0 15px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     h1 {color: white;}
     a {
     font-family: 'Montserrat-XB';
@@ -597,17 +595,20 @@ div.events-wrap {
 }
 
 table.events {
+    margin-left: 10.5%;
+    margin-right: 11.5%;
     table-layout:fixed;
-    width: 90%;
-    height: 70%;
+    border-radius: 20px;
+    // width: 90%;
+    // height: 70%;
     background: #B0E0E6;/*white;*/
     // border-radius:20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
+    // border-top-left-radius: 20px;
+    // border-top-right-radius: 20px;
+    // border-bottom-right-radius: 30px;
+    // border-bottom-left-radius: 30px;
     border-spacing:0;
-    margin:0 auto;
+    // margin:0 auto;
     color: $midnite;/* #222C3B */
     border-collapse: collapse;/* separate */
 }
@@ -616,14 +617,14 @@ table.events {
     // width: 50%;
     font-family:'Slabo27px', sans-serif;
     font-size: 0.75em;
-    padding: 10px 5px;
+    padding: 10px;
     word-break:normal;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     vertical-align: middle;
     text-align: left;
-    border: 1px solid $water;
+    border: 1px solid navy;
     text-shadow: 1px 1px 1px #ffffff;
 }
 
@@ -634,7 +635,7 @@ table.events {
     font-size: 1em;
     font-weight: bold;
     padding:10px 5px;
-    border-bottom: 1.5px solid navy;
+    // border: 1px solid navy;
     // border-top-left-radius: 10px;
     // border-top-right-radius: 10px;
     word-break:normal;
@@ -647,39 +648,30 @@ table.events {
 
 .col-entry a:hover {color: $rose;}
 
-.round-table {border: none;}
+.round-table {border:none;}
 
 .round-table {
-    border: none;
-    text-shadow: 1px 1px 1px white;
+    border:none;
+    text-shadow:1px 1px 1px white;
 }
 
-.round-table thead:first-child{border-radius: 15px 0 0 0;}
+.round-table thead th:first-child{border-radius:20px 0 0 0;}
 
-.round-table thead:first-child{border-radius: 0 15px 0 0;}
+.round-table thead th:last-child{border-radius:0 20px 0 0;}
 
-.round-table td{border: none; border-top: 1px dotted navy; background-color: white;}
+.round-table td{border: none; border-top:1px solid navy; background-color:white;}
 
-.round-table tr:last-child td:first-child{border-radius: 0 0 0 20px;}
+.round-table tr:last-child td:first-child{border-radius:0 0 0 20px;}
 
-.round-table tr:last-child td:last-child{border-radius: 0 0 20px 0;}
+.round-table tr:last-child td:last-child{border-radius:0 0 20px 0;}
 
 /* Set column widths & overflow */
-table.events th.col-entry, table.events td.col-entry {width: 3%; overflow:hidden; white-space: nowrap; text-overflow: ellipsis;text-align: center; font-weight: bold;}
-table.events th.col-date, table.events td.col-date {width: 7%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
-table.events th.col-day, table.events td.col-day {width: 3%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
-table.events th.col-event, table.events td.col-event {width: 9%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
-table.events th.col-from, table.events td.col-from {width: 7%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
-table.events th.col-to, table.events td.col-to {width: 7%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
-table.events th.col-venue, table.events td.col-venue {width: 9%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
-table.events th.col-address, table.events td.address {width: 12%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
-table.events th.col-primary-sponsor, table.events td.col-primary-sponsor {width: 10%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
-table.events th.col-contact-name, table.events td.col-contact-name {width: 5%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
-table.events th.col-contact-phone,table.events td.col-contact-phone {width: 3%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
-table.events th.col-fee,table.events td.col-fee {width: 3%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
-table.events th.col-details,table.events td.col-details {width: 15%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
-table.events th.col-website,table.events td.col-website {width: 5%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
-table.events th.col-attachment,table.events td.attachment {width: 2%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
+table.events th.col-entry, table.events td.col-entry {width: 5%; overflow:hidden; white-space: nowrap; text-overflow: ellipsis;text-align: center; font-weight: bold;}
+table.events th.col-date, table.events td.col-date {width: 16%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
+table.events th.col-time, table.events td.col-time {width: 10%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
+table.events th.col-event, table.events td.col-event {width: 32%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
+table.events th.col-sponsor, table.events td.col-sponsor {width: 32%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
+table.events th.col-attachment,table.events td.attachment {width: 5%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
 
 /* Tooltip Design */
 .row-summary {
@@ -726,7 +718,10 @@ table.events th.col-attachment,table.events td.attachment {width: 2%;overflow:hi
 }
 /* Tooltip Design End*/
 
-/*--	Footer Start --*/
+
+/*--------------------*/
+/*--- Footer Start- --*/
+/*--------------------*/
 footer {
     background: transparent;
     width: 100%;
@@ -778,3 +773,4 @@ footer p a:hover {
 a#masthead:hover, a#webmaster:hover {
     color: $rose;
 }
+/* Footer End */
