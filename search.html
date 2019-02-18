@@ -1,0 +1,43 @@
+---
+layout: page
+title: Search This Site
+permalinks: /search/
+---
+
+<section id="search">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{{ page.title }}</h1>
+				
+				<div class="custom-engine">
+    			<!-- Global site tag (gtag.js) - Google Analytics -->
+                  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134632591-1"></script>
+                  <script>
+                    /* global dataLayer */
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                  
+                    gtag('config', 'UA-134632591-1');
+                  </script>
+                  
+                  <!-- Google Custom Search Engine -->
+                  <script>
+                    (function() {
+                      var cx = '005143051941823709143:tipin_lgife';
+                      var gcse = document.createElement('script');
+                      gcse.type = 'text/javascript';
+                      gcse.async = true;
+                      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                      var s = document.getElementsByTagName('script')[0];
+                      s.parentNode.insertBefore(gcse, s);
+                    })();
+                  </script>
+                  <gcse:search></gcse:search>
+                </div>
+				
+            </div>
+        </div>
+    </div>
+</section>
