@@ -1,0 +1,159 @@
+@import "variables";
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat|Nova+Round|Nova+Square|Open+Sans|Pacifico|Raleway|Slabo+13px|Slabo+27px');
+:root {
+    --aqua = #428bca;
+    --cadet = #2b0680;
+    --clear = #f2f2f2;
+    --cobalt = #2b0680;
+    --corn-blue = #5612f4;
+    --crimson = #e82625;
+    --drk-grey = #2c2c2c;
+    --fade = #bfcecb;
+    --goldenrod = #f3c649;
+    --grey = #666666;
+    --lght-grey = #d4d4d4;
+    --md-grey = #5e5e5e;
+    --midnite = #120337;
+    --peas = #90a878;
+    --rose = #f28281;
+    --royal = #000099;
+    --turquoise = #007bff;
+    --water = #d0dac6;
+    --water-grey = #94ada8;
+}
+
+
+/*-----------------------*/
+/*--- Showcase Start ---*/
+/*---------------------*/
+
+
+.carousel-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+   /* display: block; */
+    position: absolute;
+    background: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    border: 2px navy;
+    top: 0;
+    text-align: center;
+    padding: 26% 0 10% 0;
+    color: white;
+    /*z-index: 1;*/
+}
+
+.card .subtitle {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+.card a {
+    color: white;
+}
+
+.card a:hover {
+    color: var(--rose);
+}
+
+.card p {
+    font-size: 2em;
+}
+
+.card p.custom {
+    font-size: 1.275em;
+    font-style: italic;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 35px;
+    margin: 0 15% 0 20%;
+}
+
+.card h2.info-subtitle {
+    font-size: 1em;
+    text-align: justify;
+}
+
+.card .msg-box {
+    width: 100vw;
+    background-color: rgba(0,0,0,0.7);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    padding-left: 40px;
+    padding-right: 50px;
+    word-wrap: break-word;
+}
+
+.card h1.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    font-weight: 600;
+    color: white;
+}
+
+.card .msg-box h2.info-subtitle span.footnote {
+    font-size: 2em;
+}
+
+
+/* Showcase Request Form */
+
+#showcase-request {
+    background: rgba(61,71,79,0.4); /*#4B4364 rgba(85,57,130,0.4)rgb(204,204,204)*/
+    padding-top: 20px;
+    margin-bottom: 30px;
+    width: 100w;
+}
+
+#showcase-request h1.section-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.65em;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#showcase-request p.section-title {
+    color: white;
+    font-size: 1.125em;
+}
+
+#showcase-request .section-nopadding {margin-bottom: 30px;}
+
+#showcase-request p.section-subtitle {
+    color: white;
+    font-size: 1.125em;
+    font-style: italic;
+}
+
+#showcase-request .col-xs-12 {
+   margin-bottom: 20px;
+}
+
+#showcase-request label {
+    color: white;
+}
+
+
+/*---------------------*/
+/*--- Showcase End ---*/
+/*-------------------*/

@@ -1,0 +1,75 @@
+@import "variables";
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat|Nova+Round|Nova+Square|Open+Sans|Pacifico|Raleway|Slabo+13px|Slabo+27px');
+:root {
+    --aqua: #428bca;
+    --cadet: #2b0680;
+    --clear: #f2f2f2;
+    --cobalt: #2b0680;
+    --corn-blue: #5612f4;
+    --crimson: #e82625;
+    --drk-grey: #2c2c2c;
+    --fade: #bfcecb;
+    --goldenrod: #f3c649;
+    --grey: #666666;
+    --lght-grey: #d4d4d4;
+    --md-grey: #5e5e5e;
+    --midnite: #120337;
+    --obsidian: #0d0d26;
+    --peas: #90a878;
+    --rose: #f28281;
+    --royal: #000099;
+    --turquoise: #007bff;
+    --water: #d0dac6;
+    --water-grey: #94ada8;
+}
+
+
+/* Partnership Begins */
+#partnership {width: 100%; height: auto;}
+
+#partnership .container {margin: 10% auto;}
+
+#partnership .section-title {color: white;}
+
+/* Table */
+#partnership .table-block { /* wrap the table */
+    width: 100%;
+    height: 100%;
+    margin-top: 13px;
+    text-align: center;
+    padding-right: 120px;
+}
+
+table.partners { /*controls the table*/
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding-top: 50px;
+}
+
+table.partners td a.caption {
+    font-size: 0.75em;
+    font-weight: 600;
+    color: var(--water);
+}
+
+table.partners tr {height: 100%;}
+
+table.partners tr:hover {background: white; /*var(--water)*/}
+
+table.partners .caption {color: var(--midnite);}
+
+table.partners td { /* controls the data cells */
+    text-align: center;
+    vertical-align: middle;
+}
+
+img.img-responsive {padding-bottom: -30px;}
+
+a.caption { /* controls the caption */
+    display: inline-block;
+    line-height: 1;
+}
+
+/* Partnership Ends */

@@ -4,8 +4,15 @@
 <meta name="description" content="{{ page.title }}">
 <title>{{ page.title }}</title>
 
+<!--Assign Specific Page CSS-->
+  {% if page.custom_css %}
+    {% for stylesheet in page.custom_css %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css">
+    {% endfor %}
+  {% endif %}
+
 <!-- CDN Styling Resources-Font -->
-<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Raleway|Slabo+13px|Slabo+27px" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Nova+Round|Nova+Square|Open+Sans|Pacifico|Raleway|Slabo+13px|Slabo+27px" rel="stylesheet">
 
 <!-- Old FA version <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
 <!-- Alternative Font-Awesome Source: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->

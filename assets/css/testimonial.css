@@ -1,0 +1,106 @@
+@import "variables";
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat|Nova+Round|Nova+Square|Open+Sans|Pacifico|Raleway|Slabo+13px|Slabo+27px');
+:root {
+    --aqua = #428bca;
+    --cadet = #2b0680;
+    --clear = #f2f2f2;
+    --cobalt = #2b0680;
+    --corn-blue = #5612f4;
+    --crimson = #e82625;
+    --drk-grey = #2c2c2c;
+    --fade = #bfcecb;
+    --goldenrod = #f3c649;
+    --grey = #666666;
+    --lght-grey = #d4d4d4;
+    --md-grey = #5e5e5e;
+    --midnite = #120337;
+    --obsidian = #0d0d26;
+    --peas = #90a878;
+    --rose = #f28281;
+    --royal = #000099;
+    --turquoise = #007bff;
+    --water = #d0dac6;
+    --water-grey = #94ada8;
+}
+
+
+/* Testimonial Page Begins */
+
+#testimony {
+    width: 100%;
+    height: 100%;
+    background: var(--lght-grey);
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);
+    -moz-box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);/*rgba(247,247,247,1) */
+    box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);
+}
+
+#testimony .container{
+    width: 100%;
+    text-slign: justify;
+    padding: 50px 0 50px 0;
+    margin: 0 auto;
+
+}
+
+#testimony .masthead {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+#testimony h1 {
+    font-family: 'Open Sans';
+    font-weight: 800;
+  }
+
+#testimony  h5 {
+    font-family: 'Nova Round';
+    font-size: 1.12em;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+  }
+
+
+#testimony .closer {
+    text-align: center;
+    font-weight: 350;
+}
+
+#testimony .closer h5 span {
+ font-family: 'Pacifico';
+}
+
+#testimony h5 a {
+    /*font-size: 1.115em;*/
+    text-decoration: none;
+    color: var(--obsidian);
+    text-align: center;
+}
+
+#testimony h5 a:hover {
+    color: var(--rose);
+    font-weight: 500;
+}
+
+#testimony h2 {
+    font-size: 1.5em;
+}
+
+#testimony p {
+    font-family: 'Nova Round';
+    font-size: 1.2em;
+    line-height: 30px;
+    text-align: justify;
+}
+
+/*
+ #testimony .page-pad {
+     padding: 50px;
+ }
+*/
+
+/* Testimonial Page Ends */

@@ -7,8 +7,11 @@
 <meta name="description" content="Education">
 <title>Education</title>
 
+<!--Assign Specific Page CSS-->
+  
+
 <!-- CDN Styling Resources-Font -->
-<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Raleway|Slabo+13px|Slabo+27px" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Nova+Round|Nova+Square|Open+Sans|Pacifico|Raleway|Slabo+13px|Slabo+27px" rel="stylesheet">
 
 <!-- Old FA version <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
 <!-- Alternative Font-Awesome Source: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
@@ -24,7 +27,12 @@
   </head>
   <body>
     
-    <header>
+    ---
+layout:default
+---
+<div id="site-container">
+    
+<header>
   <div class="header-container">
       <a class="brand" href="/">
           <img src="/assets/images/Official_CCDC_Logo.jpg" alt="Menu Button" width="30" height="30">
@@ -44,7 +52,7 @@
   					<li><a href="/leadership">Leadership</a>
   				</ul>
   			</li>
-  			<li><a href="/events">Community</a></li>
+  			<li><a href="/highlights">Community</a></li>
   			<li>
   				<a href="/resources">Resources &#x25BE;</a>
   				<ul class="hidden">
@@ -65,46 +73,63 @@
   </div><!--header-container-->
 </header>
     
-    <section id="education">
-    <div class="table-cell">
-        <div class="container">
-        
-            <div class="row"><!-- row1 -->
-                <div class="col-md-10 col-md-offset-1 text-xs-center">
-                    <h1 class="section-title display-1">Education</h1>
-                    <p class="section-lead lead">
-                        We are commited to sharing knowledge and information 
-                    for the purposes of enlightenment, empowerment, and education. We develop and 
-                    sponsor youth support and enhancement programs, as well, business symposia in 
-                    support local businesses. We act as an information resource making available 
-                    information on social programs and aids for those in need.&nbsp;
-                    </p>
-                </div><!-- colmd10 -->
-            </div><!-- row1 -->
-            <div class="row"><!-- row2 -->
-                <div class="table-md-up">
-                  <div class="col-md-4">
-                  </div>
-                  <div class="col-md-8 text-xs-center text-md-left">
-                      <h3 class="section-title">Operation Re-Boot</h3>
-                      <h2 class="section-subtitle">From the archives, pictures of various session with the youth</h2>
-                  </div>
-                </div><!-- table-md-up -->
-            </div><!-- row2 -->
-            <div class="row"><!-- row3 -->
-                <div class="col-md-8 col-md-offset-2 text-xs-center">
-                    <h3 class="section-title">Small Business Symposium</h3>
-                    <div class="section-lead">
-                        <p>Cornerstone Community Development Corporation</p>
-                    </div>
-                </div>
-            </div><!-- row3 -->
-        
-        </div><!-- container -->
-    </div><!-- table-cell -->
+<section id="education">
+    <div class="container">
+    
+        <div class="row"><!-- row1 -->
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="section-title">Education</h1>
+                <p class="section-lead">
+                    We are commited to sharing knowledge and information 
+                for the purposes of enlightenment, empowerment, and education. We develop and 
+                sponsor youth support and enhancement programs, as well, business symposia in 
+                support local businesses. We act as an information resource making available 
+                information on social programs and aids for those in need.&nbsp;
+                </p>
+            </div><!-- colmd10 -->
+        </div><!-- row1 -->
+        <div class="row"><!-- row2 -->
+              <div class="col-md-10 col-md-offset-1">
+                  <h1 class="section-subtitle">Operation Re-Boot</h1>
+                  <p class="section-lead">
+                    is a partnership between Cornerstone Community Development Corporation
+                    the community and the school system. Community development is our passion and the youth are a 
+                    vital integral part of any community. With so much negative associated with today’s youth, we try to 
+                    accentuate the positive. The program serves Bergen County middle to high school youths.&nbsp;&nbsp;
+                    <a href="/operation-re-boot">Click here to read more ...</a>
+                  </p>
+              </div>
+        </div><!-- row2 -->
+        <div class="row"><!-- row3 -->
+              <div class="col-md-10 col-md-offset-1">
+                  <h1 class="section-subtitle">"Making It Happen From the Ground Up"</h1>
+                  <p class="section-lead">
+                      As part of our commitment to the sustained growth and develop of community, we offer a three tier 
+                      internship program that helps to train the community leaders of tomorrow. In light of the current
+                      political climate, we are uniquely equipped to help prepare and train this current generation in 
+                      grass roots leadership and community service. At Cornerstone, we have the collective knowledge 
+                      and experience to address the need and raise tomorrow's community leaders.&nbsp;&nbsp;
+                      <a href="/internship">Click here to read more ...</a>
+                  </p>
+              </div>
+        </div><!-- row3 -->
+        <div class="row"><!-- row4 -->
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="section-subtitle">Small Business Symposia</h1>
+                <p class="section-lead">
+                    In an endeavor to help support the growth of small business in the community,
+                    we bring together business, industry, and government experts to address topics
+                    and relevant issues that impact small businesses and micro-enterprises.&nbsp;&nbsp;
+                    <a href="/symposium">Click here to read more ...</a>
+                </p>
+            </div>
+        </div><!-- row4 -->
+    
+    </div><!-- container -->
+    <div class="page-pad"></div>
 </section>
     
-    <footer>
+<footer>
     
     <div  class="foot-menu">
         <ul>
@@ -123,8 +148,10 @@
     </div>
     
 </footer>
+
+</div>
     
-    
+  
     <!-- For Bootstrap 4.1.3 | JQuery 3.3.1 | Popper 1.14.3 -->
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>

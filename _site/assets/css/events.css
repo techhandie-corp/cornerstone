@@ -1,0 +1,178 @@
+@import "variables";
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat|Nova+Round|Nova+Square|Open+Sans|Pacifico|Raleway|Slabo+13px|Slabo+27px');
+:root {
+    --aqua = #428bca;
+    --cadet = #2b0680;
+    --clear = #f2f2f2;
+    --cobalt = #2b0680;
+    --corn-blue = #5612f4;
+    --crimson = #e82625;
+    --drk-grey = #2c2c2c;
+    --fade = #bfcecb;
+    --goldenrod = #f3c649;
+    --grey = #666666;
+    --lght-grey = #d4d4d4;
+    --md-grey = #5e5e5e;
+    --midnite = #120337;
+    --peas = #90a878;
+    --rose = #f28281;
+    --royal = #000099;
+    --turquoise = #007bff;
+    --water = #d0dac6;
+    --water-grey = #94ada8;
+}
+
+
+/* Events Table  Begins */
+
+#events {width: 100vw; height: 100vh;}
+
+.events-wrap {
+    background: #222C3B;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    text-align: center;
+    border: 0px solid;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);
+    -moz-box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);
+    box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);
+}
+
+.events-titles {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.events-titles   h1 {color: white;}
+
+.events-titles a {
+font-family: 'Montserrat-XB';
+font-style: italic;
+font-size: 2em;
+color: white;
+text-decoration: none;
+}
+
+.events-titles a:hover {color: var(--rose);}
+
+
+table.events {
+    margin-left: 1.5%;
+    margin-right: 3%;
+    table-layout:fixed;
+    border-radius: 20px;
+    background: #B0E0E6;/*white #B0E0E6 deepskyblue*/
+    border-spacing:0;
+    color: var(--midnite);/* #222C3B */
+    border-collapse: collapse;/* separate */
+}
+
+.events td {
+    font-family:'Slabo27px', sans-serif;
+    font-size: 0.875em;
+    font-weight: 500;
+    padding: 10px;
+    word-break:normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    text-align: left;
+    border: 1px solid navy;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+.events thead tr {background: transparent;}
+
+.events th {
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.125em;
+    font-weight: bold;
+    padding:10px 5px;
+    word-break:normal;
+    text-align:justify;
+    vertical-align: middle;
+}
+
+.col-entry a {color: navy; }
+
+.col-entry a:hover {color: var(--rose);}
+
+.round-table {border:none;}
+
+.round-table {
+    border:none;
+    text-shadow:1px 1px 1px white;
+}
+
+.round-table thead th:first-child{border-radius:20px 0 0 0;}
+
+.round-table thead th:last-child{border-radius:0 20px 0 0;}
+
+.round-table td{border: none; border-top:1px solid navy; background-color:white;}
+
+.round-table tr:last-child td:first-child{border-radius:0 0 0 20px;}
+
+.round-table tr:last-child td:last-child{border-radius:0 0 20px 0;}
+
+/* Set column widths & overflow */
+table.events th.col-entry, table.events td.col-entry {width: 5%; overflow:hidden; white-space: nowrap; text-overflow: ellipsis;text-align: center; font-weight: bold;}
+table.events th.col-date, table.events td.col-date {width: 16%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
+table.events th.col-time, table.events td.col-time {width: 10%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
+table.events th.col-event, table.events td.col-event {width: 32%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
+table.events th.col-sponsor, table.events td.col-sponsor {width: 32%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
+table.events th.col-attachment,table.events td.attachment {width: 5%;overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
+
+/* Tooltip Design Begins */
+.row-summary {
+  postion: relative;
+}
+
+.row-details {
+  display: none;
+  position: absolute;
+  border: 1px;/*0*/
+  border-style: solid;
+  border-width: 2px;/*0*/
+  border-color: var(--midnite);/*var(--water)*/
+  border-radius: 12px;
+  padding: 10px;
+  left: 10%;
+  width: 50%;
+  height: auto;
+  line-height: 2em;
+  word-break: normal;
+  white-space: normal;
+  vertical-align: middle;
+  text-align: justify;/* left */
+  margin-top: 20px;
+}
+
+.row-details:after {
+  position: absolute;
+  top: -20px;
+  bottom: 0;
+  height: 0;
+  width: 0;
+  left: 1.5%;
+  border: 10px solid transparent;
+  border-bottom-color: #222C3B;;
+  content: "";
+}
+
+.row-summary:hover span.row-details {
+  background: #f2f2f2;/* #f9f9eb var(--water) beige var(--midnite) #222C3B */
+  color: navy;/* var(--cobalt) #222C38 */
+  display: block;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 1.25em;
+}
+/* Tooltip Design End*/
+
+
+/* Events Table Ends */

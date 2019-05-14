@@ -1,17 +1,21 @@
 ---
 layout: page
-title: Search This Site
+title: Search
+custom_css: search-page
 permalinks: /search/
 ---
 
 <section id="search">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+
                 <h1>{{ page.title }}</h1>
-				
-				<div class="custom-engine">
-    			<!-- Global site tag (gtag.js) - Google Analytics -->
+				        <h4>
+				          <span>*</span><i>&nbsp;&nbsp;uses Goggle Custom Search Engine: first section has ads; 
+				          results from this site are in second section.</i>
+				        </h4>
+				        <div class="custom-engine">
+    			        
+    			        <!-- Global site tag (gtag.js) - Google Analytics -->
                   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134632591-1"></script>
                   <script>
                     /* global dataLayer */
@@ -35,9 +39,9 @@ permalinks: /search/
                     })();
                   </script>
                   <gcse:search></gcse:search>
+                    
                 </div>
 				
-            </div>
-        </div>
     </div>
+    <div class="page-pad"></div>
 </section>
