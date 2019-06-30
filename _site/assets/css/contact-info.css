@@ -1,0 +1,43 @@
+@import "main.css";
+
+/* Contact Info Begins */
+
+#contact-info {
+    background: transparent; /*rgb(204, 204, 204)*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: calc(100vh-70px);
+    width: 100vw;
+}
+
+.contact-info-container-middle {padding: 20px 0 50px 0;}
+
+.section-title {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: white;
+}
+
+.section-nopadding {margin-bottom: 30px;}
+
+small.section-subtitle {
+    color: white;
+    font-style: italic;
+}
+
+.col-xs-12 {
+   margin-bottom: 20px;
+}
+
+label {
+    color: white;
+}
+
+/* Media Queries */
+/* For Phones */
+@media only screen and (max-width: 768px) {
+    .contact-info-container-middle {padding: 0 0 30px 0;}
+}
+
+
+/* contact Info Ends */

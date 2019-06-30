@@ -10,13 +10,25 @@ exclude:
 title: Cornerstone Community Development Corporation
 email: systemadmin@cdccornerstone.org
 description: Community Development Corporation site
-url: "https://kens-coding-kayceejjay.c9users.io/" # actual site url https://kayceejjay.github.io not CNAME if one used; http://localhost:63342/Cornerstone/Cornerstone/ https://kens-coding-kayceejjay.c9users.io/ in development
+url: "https://kens-coding-kayceejjay.c9users.io/" #actual site url https://kayceejjay.github.io not CNAME if one used; http://localhost:63342/Cornerstone/Cornerstone/ https://kens-coding-kayceejjay.c9users.io/ in development
 baseurl: ""
 
 #Build Settings
 markdown: kramdown
 
+#Key Paths
+assets:
+    - attachments
+    - css
+    - fonts
+    - images
+    - videos
+
 sass:
+  sass_dir: _sass
   load_paths:
     - _sass
     - node_modules
+
+exclude:
+    - backups

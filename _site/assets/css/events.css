@@ -1,27 +1,4 @@
-@import "variables";
-@import "bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat|Nova+Round|Nova+Square|Open+Sans|Pacifico|Raleway|Slabo+13px|Slabo+27px');
-:root {
-    --aqua = #428bca;
-    --cadet = #2b0680;
-    --clear = #f2f2f2;
-    --cobalt = #2b0680;
-    --corn-blue = #5612f4;
-    --crimson = #e82625;
-    --drk-grey = #2c2c2c;
-    --fade = #bfcecb;
-    --goldenrod = #f3c649;
-    --grey = #666666;
-    --lght-grey = #d4d4d4;
-    --md-grey = #5e5e5e;
-    --midnite = #120337;
-    --peas = #90a878;
-    --rose = #f28281;
-    --royal = #000099;
-    --turquoise = #007bff;
-    --water = #d0dac6;
-    --water-grey = #94ada8;
-}
+@import "main.css";
 
 
 /* Events Table  Begins */
@@ -173,6 +150,16 @@ table.events th.col-attachment,table.events td.attachment {width: 5%;overflow:hi
   font-size: 1.25em;
 }
 /* Tooltip Design End*/
+
+
+/* Media Queries */
+@media only screen and (max-width: 1300px) {
+    #events {width: 100%;}
+    
+    .events-wrap {width: 100%; overflow: auto;}
+    
+    table.events {margin-left: 0; margin-right: 0;}
+}
 
 
 /* Events Table Ends */

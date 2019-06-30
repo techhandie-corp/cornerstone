@@ -1,7 +1,4 @@
-@import "variables";
-@import "bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat|Nova+Round|Nova+Square|Open+Sans|Pacifico|Raleway|Slabo+13px|Slabo+27px');
-
+@import "main.css";
 
 /* Search Page Begins */
 
@@ -16,6 +13,8 @@
     -webkit-box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);
     -moz-box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);/*rgba(247,247,247,1) */
     box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);
+    padding: 180px 0 320px 0;
+    margin: 30px 0 20px 0;
 }
 
 #search .container {
@@ -77,10 +76,17 @@ form.gsc-search-box.gsc-search-box-tools {/*this effects immediate border of sea
     width: 100vw;
 }
 
-/*
- #search .page-pad {
-     padding: 250px;
- }
-*/
+/* Media Queries */
+
+/*For Phones */
+@media only screen and (max-width: 768px) {
+    
+    #search {
+        width: 100vw;
+        margin: 0 0 0 -60px;
+        border-radius: 0;
+    }
+
+}
 
 /* Search Page Ends */

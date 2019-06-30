@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
 <meta name="description" content="Purpose">
 <title>Purpose</title>
 
 <!--Assign Specific Page CSS-->
+  
+    
+    <link rel="stylesheet" href="/assets/css/purpose.css">
+    
   
 
 <!-- CDN Styling Resources-Font -->
@@ -27,26 +31,24 @@
   </head>
   <body>
     
-    ---
-layout:default
----
-<div id="site-container">
+    <div id="site-container">
     
 <header>
   <div class="header-container">
-      <a class="brand" href="/">
+    <a class="brand" href="/">
           <img src="/assets/images/Official_CCDC_Logo.jpg" alt="Menu Button" width="30" height="30">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cornerstone Community Development Corp.
-      </a>
-  	<div class="navigator">
+    </a>
+    <div class="navigator">
   		<div class="nav-block">
   		<!-- invoke the collapsed menu button for small viewports -->
   		<label for="show-menu" class="show-menu"><span class="grow">&nbsp;&nbsp;<i class="fas fa-bars"></i>&nbsp;&darr;&nbsp;</span></label>
   		<input type="checkbox" id="show-menu" role="button">
   		<ul id="menu">
-  			<li><!-- Use unicode &#x25BC; for dropdown triangle & &darr; for down arrow --->
-  				<a href="/about">About &#x25BE;</a>
-  				<ul class="hidden">
+  		  <li class="phantom"><a href="/">Home</a></li>
+  			<li><!-- Use unicode &#x25BC; for dropdown triangle & &darr; for down arrow -->
+  				<a href="/about">About<span class="triangle">&#x25BE;</span></a>
+  				<ul id="drop1" class="hidden">
   					<li><a href="/mission">Mission</a></li>
   					<li><a href="/purpose">Purpose</a></li>
   					<li><a href="/leadership">Leadership</a>
@@ -54,20 +56,21 @@ layout:default
   			</li>
   			<li><a href="/highlights">Community</a></li>
   			<li>
-  				<a href="/resources">Resources &#x25BE;</a>
-  				<ul class="hidden">
+  				<a href="/resources">Resources<span class="triangle">&#x25BE;</span></a>
+  				<ul id="drop2" class="hidden">
   					<li><a href="/showcase">Showcase</a></li>
   					<li><a href="/scholarship">Scholarship</a></li>
   					<li><a href="/internship">Internship</a></li>
   				</ul>
   			</li>
   			<li><a href="/contact-info">Contact Us</a></li>
+  			<li class="phantom"><a href="/search">Search</a></li>
+  			<li class="phantom"><a href="/donation">Donate</a></li>
   		</ul>
   		</div><!--nav-block-->
   		<div class="split">
   			<a class="search-icon table-cell" href="/search">&nbsp;&nbsp;&nbsp;<i class="fas fa-search"></i></a>
-  			<a class="btn btn-outline-success btn-sm my-2 my-sm-0 table-cell" href="/donation" role="button">Donate</a><!-- id="b-donate" -->
-  			
+  			<a id="b-donate" class="btn btn-outline-success btn-sm my-2 my-sm-0 table-cell" href="/donation" role="button">Donate</a><!-- id="b-donate" -->
   		</div>
   	</div><!--navigator-->
   </div><!--header-container-->
@@ -79,21 +82,25 @@ layout:default
         
         <div class="row">
             <div class="col-xs-12">
-                <h1>Purpose</h1>
+                <div class="title">Purpose</div>
                 <p>The Cornerstone Community Development Corporation is a faith based 501(C)(3)
                 non-profit organization, serving Bergen County New Jersey, whose purpose is to:</p>
-                <ul>
-                    <li>Meet a need(s) in the community</li>
-                    <li>Physical, natural, and material need that is essential to and promotes wholeness</li>
-                    <li>Inception and incorporation of the Cornerstone Community Development Corporation (October 2006)</li>
-                </ul>
+            
+            <!--Bullet  Points-->  
+            <div class="bulleted">
+                <div class="s"></div>
+                <div class="item1"><span>&#9632;</span>Meet a need(s) in the community</div>
+                <div class="item2"><span>&#9632;</span>Physical, natural, and material need that is essential to and promotes wholeness</div>
+                <div class="item3"><span>&#9632;</span>Inception and incorporation of the Cornerstone Community Development Corporation (October 2006)</div>
+                <div class="e"></div>
             </div>
+                
         </div><!-- row1 -->
         
         <div class="row">
             <div class="col-xs-12">
-                <h2 class="section-subtitle">Scriptural Foundation</h2>
-                <h4>Matthew 25:34-40 (NIV) -</h4>
+                <div class="subtitle">Scriptural Foundation</div>
+                <div class="heading">Matthew 25:34-40 (NIV) -</div>
                 <p><em>"Then the King will say to those on his right, 'Come, you who are blessed by my Father; take your inheritance,
                 the kingdom prepared for you since the creation of the world.  (35)  For I was hungry and you gave me something to eat, 
                 I was thirsty and you gave me something to drink, I was a stranger and you invited me in,  (36)  I needed clothes and you
@@ -103,7 +110,7 @@ layout:default
                 go to visit you?' (40)  "The King will reply, 'Truly I tell you, whatever you did for one of the least of these brothers 
                 and sisters of mine, you did for me.'</em></p>
                <br>
-                <h4>Luke 10:33-37 (NIV) -</h4>
+                <div class="heading">Luke 10:33-37 (NIV) -</div>
                 <p><em>But a Samaritan, as he traveled, came where the man was; and when he saw him, he took pity on him.  (34)  He went
                 to him and bandaged his wounds, pouring on oil and wine. Then he put the man on his own donkey, brought him to an inn and 
                 took care of him.  (35)  The next day he took out two denarii and gave them to the innkeeper. 'Look after him,' he said, 
@@ -117,25 +124,41 @@ layout:default
 
 </section>
     
-<footer>
+<footer id="flex-menu">
     
-    <div  class="foot-menu">
+
+        <div><a class="menu-items" href="/about">About</a></div>
+        <div><a class="menu-items" href="/contact">Contact</a></div>
+        <div><a class="menu-items" href="/help">Help</a></div>
+        <div class="bottom-control">Copyright &copy; 2019 &nbsp;&nbsp;&nbsp;</div>
+        <div class="bottom-control"><a id="masthead" href="/">Cornerstone Community Development Corporation</a>&nbsp;&nbsp;
+                &nbsp;</div>
+        <div class="bottom-control">
+          All rights reserved &nbsp;&nbsp;&nbsp;<i>Powered by 
+                </i>
+          <a id="webmaster" href="https://www.techhandie.com">TechHandie Corp.</a>
+        </div>
+
+    
+</footer>
+
+<!-- Old Footer
+<div  id ="foot-menu">
         <ul>
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a</li>
           <li><a href="/help">Help</a></li>
         </ul>
     </div>
-    <div class="bottom-control">
+    <div id ="bottom-control">
         <p>
             Copyright &copy; 2019 &nbsp;&nbsp;&nbsp;
             <a id="masthead" href="/">Cornerstone Community Development Corporation</a>&nbsp;&nbsp;
             &nbsp;All rights reserved &nbsp;&nbsp;&nbsp;<i>Powered by 
             </i><a id="webmaster" href="https://www.techhandie.com">TechHandie Corp.</a>
         </p>
-    </div>
-    
-</footer>
+</div>
+-->
 
 </div>
     

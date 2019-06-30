@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
 <meta name="description" content="Showcase Introduction">
 <title>Showcase Introduction</title>
 
@@ -31,26 +31,24 @@
   </head>
   <body>
     
-    ---
-layout:default
----
-<div id="site-container">
+    <div id="site-container">
     
 <header>
   <div class="header-container">
-      <a class="brand" href="/">
+    <a class="brand" href="/">
           <img src="/assets/images/Official_CCDC_Logo.jpg" alt="Menu Button" width="30" height="30">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cornerstone Community Development Corp.
-      </a>
-  	<div class="navigator">
+    </a>
+    <div class="navigator">
   		<div class="nav-block">
   		<!-- invoke the collapsed menu button for small viewports -->
   		<label for="show-menu" class="show-menu"><span class="grow">&nbsp;&nbsp;<i class="fas fa-bars"></i>&nbsp;&darr;&nbsp;</span></label>
   		<input type="checkbox" id="show-menu" role="button">
   		<ul id="menu">
-  			<li><!-- Use unicode &#x25BC; for dropdown triangle & &darr; for down arrow --->
-  				<a href="/about">About &#x25BE;</a>
-  				<ul class="hidden">
+  		  <li class="phantom"><a href="/">Home</a></li>
+  			<li><!-- Use unicode &#x25BC; for dropdown triangle & &darr; for down arrow -->
+  				<a href="/about">About<span class="triangle">&#x25BE;</span></a>
+  				<ul id="drop1" class="hidden">
   					<li><a href="/mission">Mission</a></li>
   					<li><a href="/purpose">Purpose</a></li>
   					<li><a href="/leadership">Leadership</a>
@@ -58,20 +56,21 @@ layout:default
   			</li>
   			<li><a href="/highlights">Community</a></li>
   			<li>
-  				<a href="/resources">Resources &#x25BE;</a>
-  				<ul class="hidden">
+  				<a href="/resources">Resources<span class="triangle">&#x25BE;</span></a>
+  				<ul id="drop2" class="hidden">
   					<li><a href="/showcase">Showcase</a></li>
   					<li><a href="/scholarship">Scholarship</a></li>
   					<li><a href="/internship">Internship</a></li>
   				</ul>
   			</li>
   			<li><a href="/contact-info">Contact Us</a></li>
+  			<li class="phantom"><a href="/search">Search</a></li>
+  			<li class="phantom"><a href="/donation">Donate</a></li>
   		</ul>
   		</div><!--nav-block-->
   		<div class="split">
   			<a class="search-icon table-cell" href="/search">&nbsp;&nbsp;&nbsp;<i class="fas fa-search"></i></a>
-  			<a class="btn btn-outline-success btn-sm my-2 my-sm-0 table-cell" href="/donation" role="button">Donate</a><!-- id="b-donate" -->
-  			
+  			<a id="b-donate" class="btn btn-outline-success btn-sm my-2 my-sm-0 table-cell" href="/donation" role="button">Donate</a><!-- id="b-donate" -->
   		</div>
   	</div><!--navigator-->
   </div><!--header-container-->
@@ -79,7 +78,7 @@ layout:default
     
 <section id="showcase">
 
-	<div id="spotlight" class="carousel slide" data-ride="carousel">
+	<div id="spotlight" class="carousel slide" data-ride="carousel" data-interval="30000"><!--data-interval="2500"-->
 	
 	  <!-- Indicators -->
 	  <ul class="carousel-indicators">
@@ -92,118 +91,138 @@ layout:default
 	  <!-- The slideshow -->
 	  <div class="carousel-inner">
 	  	
-	    <div class="carousel-item active">
-			<img src="/assets/images/sepia-tinted-sky.jpg" width="1000" height="700">
-			<div class="card">
-				<h2>Entrepreneurship</h2>
-				<h3 class="subtitle">We believe entrepreneurship is vital to a healthy community and actively suport it</h3>
-				<br><br>
-				<p class="custom">
-					We sponsor small business symposiums that cover topics and issues that are
-					essential to the genesis and growth of business. <br><br>We periodically showcase 
-					various community businesses and organizations here <span class="footnote">*</span>
-					. We are especially partial to startups. If you wish your business/organization showcased
-					here, click on the button below. IT'S FREE!
-				</p>
-				
-				<div class="msg-box">
-					<h2 class="info-subtitle">
-	                      <span class="footnote">*</span>
-	                      &nbsp;Organizations &nbsp;showcased 
-	                  here are neither representative of, &nbsp;nor endorsements of, the Cornerstone Community Development
-	                  Corporation. We reserve the right to deny a showcase request or remove an organization at any time
-	                  without warning or explanation.
-	                </h2>
-				</div>
-				
-				<div class="section-btn">
-					<a class="btn btn-lg btn-success" href="/showcase-request" target="_blank">Request</a>
-				</div><!--section-btn-->
-				
-			</div>	
+	    <div class="carousel-item active"><!--1st-->
+			<div class="one">
+				<div class="content">
+					<div class="title">Entrepreneurship</div>
+					<div class="subtitle">We believe entrepreneurship is vital</div> 
+					<div class="subtitle"> to a healthy community and actively suport it</div>
+					<br>
+					<p class="custom">
+						We sponsor small business symposiums that cover topics and issues that are
+						essential to the genesis and growth of business. <br><br>We periodically showcase 
+						various community businesses and organizations here <span class="footnote">*</span>
+						. We are especially partial to startups. If you wish your business/organization showcased
+						here, click on the button below. IT'S FREE!
+					</p>
+					
+					<div class="section-btn">
+						<a class="button" id="button1" href="/showcase-request" target="_blank">Request</a>
+					</div><!--section-btn-->
+					
+					<div class="msg-box">
+						<div class="info-subtitle">
+		                      <span class="footnote">*</span>
+		                      &nbsp;Organizations &nbsp;showcased 
+		                  here are neither representative of, &nbsp;nor endorsements of, the Cornerstone Community Development
+		                  Corporation. We reserve the right to deny a showcase request or remove an organization at any time
+		                  without warning or explanation.
+		                </div>
+					</div>
+				</div>	
+			</div>
 		</div>
 	    
-	    <div class="carousel-item">
-	      <img src="/assets/images/man-back.jpg" width="1000" height="700">
-	      <div class="card">
-	      	<h2>
-	      		<a class="section-title" href="https://www.movingonlifecenter.com/" target="_blank">Moving On Life Center, Inc.</a>
-	      	</h2>
-			<p><strong>START THE JOURNEY NOW. THE BEST IS YET TO COME.</strong></p>
-			<p>Moving on Life Center, Inc., is a therapeutic counseling network of health care professionals. Our Holistic counseling
-			group provides multiple services for individuals, families, couples, teens and children.</p>
-			<p>Call Us in Teaneck, New Jersey, at (201) 837-8590</p>
-			<div class="section-btn">
-				<a class="btn btn-lg btn-white btn-white-outline" href="/assets/videos/MOLC.m4v">VIEW</a>
+	    <div class="carousel-item"><!--2nd-->
+	      <div class="two">
+	      	<div class="content">
+		      	<div class="slate">
+		      		<a class="section-title slate" href="https://www.movingonlifecenter.com/" target="_blank">Moving On Life Center, Inc.</a>
+		      	</div>
+				<div class="section-subtitle slate">START THE JOURNEY NOW. THE BEST IS YET TO COME.</div>
+				<br>
+				<p class="slate justify">Moving on Life Center, Inc., is a therapeutic counseling network of health care professionals. Our Holistic counseling
+				group provides multiple services for individuals, families, couples, teens and children.</p>
+				<p class="slate justify">Call Us in Teaneck, New Jersey, at (201) 837-8590</p>
+			</div>
+			<div class="section-btn weighty">
+				<a class="button slate" id="button2" href="https://kens-coding-kayceejjay.c9users.io/assets/videos/MOLC.m4v">VIEW HERE</a>
 			</div><!--https://youtu.be/d24Emehxyx4 -->
 	      </div>
 	    </div>
 	    
-	    <div class="carousel-item">
-	      <img src="/assets/images/workplace-1245776-1920-1920x1280.jpg" width="1000" height="700">
-	      <div class="card">
-	      	<h2>Tristate Marketing Solutions</h2>
-			<p class="subtitle">Hello, and thank you for clicking to learn more about Tristate Marketing Solutions</p><br>
-			<p class="custom">You are motivated to promote and grow your business, taking it to the next level.  We provide the marketing and promotion you need without the big ticket price.</p><br>
-			<p class="custom">We are a small team of professionals dedicated to ensuring that you get the desired marketing result you want to achieve, we make sure your business looks awesome and represents you well!</p>
-			<p class="custom">We offer friendly, responsive and professional business support, with over 10 years of hands-on experience.</p><br>
-			<p class="custom">Working with us is like having your own in-house, full-service website, marketing, branding, and printing department. We are your go-to team, just one phone call or email away.</p>
-			<div class="section-btn">
-				<a class="btn btn-lg btn-white btn-white-outline" href="http://tristatemarketingsolutions.com/">LEARN MORE</a>
+	    <div class="carousel-item"><!--3rd-->
+	      <div class="three">
+	      	<div class="content">
+		      	<div class="title bluegranite">Tristate Marketing Solutions</div>
+				<p class="custom bluegranite">You are motivated to promote and grow your business, taking it to the next level.  We provide the marketing and promotion you need without the big ticket price.</p><br>
+				<p class="custom bluegranite">We are a small team of professionals dedicated to ensuring that you get the desired marketing result you want to achieve, we make sure your business looks awesome and represents you well!</p>
+				<p class="custom bluegranite">We offer friendly, responsive and professional business support, with over 10 years of hands-on experience.</p><br>
+				<div class="section-btn">
+					<a class="button" id="button3" href="http://tristatemarketingsolutions.com/">LEARN MORE</a>
+				</div>
+			</div>	
+	      </div>
+	    </div>
+	    
+	    <div class="carousel-item"><!--4th-->
+	      <div class="four">
+	      	<div class="content">
+		      	<div class="title bluesurf"><a href="http://www.premierdoulas.com" target="_blank">Premier Doulas, LLC</a></div>
+				<div class="subtitle bluesurf">Premier Doulas is a full service birth</div>
+				<div class="subtitle bluesurf">and postpartum doula agency</div>
+					<br><br>
+				<p class="custom bluesurf">
+					We take pride in having a variety of doulas with diverse skills and experience in 
+				comprehensive services. We make sure we are always up to date on all that encompasses 
+				the doula world so we can be the most beneficial and supportive to mothers and their families.
+				</p>
+				<div  class="section-btn">
+					<a class="button" id="button4" href="http://www.premierdoulas.com">LEARN MORE</a>
+				</div>
 			</div>
 	      </div>
 	    </div>
-	    <div class="carousel-item">
-	      <img src="/assets/images/swan-2350668.jpg" width="1300" height="800">
-	      <div class="card">
-	      	<h2><a href="http://www.premierdoulas.com" target="_blank">Premier Doulas, LLC</a></h2>
-			<h2 class="subtitle">Premier Doulas is a full service birth and postpartum doula agency</h2>
-				<br><br>
-			<p class="custom">
-				We take pride in having a variety of doulas with diverse skills and experience in 
-			comprehensive services. We make sure we are always up to date on all that encompasses 
-			the doula world so we can be the most beneficial and supportive to mothers and their families.
-			</p>
-			<div class="section-btn">
-				<a class="btn btn-lg btn-white btn-white-outline" href="http://www.premierdoulas.com">LEARN MORE</a>
-			</div>
-	      </div>
-	    </div>
+	    
 	  </div>
 	
 	  <!-- Left and right controls -->
-	  <a class="carousel-control-prev" href="#spotlight" data-slide="prev">
-	    <span class="carousel-control-prev-icon"></span>
-	  </a>
-	  <a class="carousel-control-next" href="#spotlight" data-slide="next">
-	    <span class="carousel-control-next-icon"></span>
-	  </a>
-	
+		  <a id="chevron-l" class="carousel-control-prev" href="#spotlight" data-slide="prev">
+		    <span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a id="chevron-r" class="carousel-control-next" href="#spotlight" data-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		  </a>
+	  
 	</div>
 
-</section><!-- #spotlight.carousel slide -->
+    </section><!-- #spotlight.carousel slide -->
+    
+<footer id="flex-menu">
+    
 
+        <div><a class="menu-items" href="/about">About</a></div>
+        <div><a class="menu-items" href="/contact">Contact</a></div>
+        <div><a class="menu-items" href="/help">Help</a></div>
+        <div class="bottom-control">Copyright &copy; 2019 &nbsp;&nbsp;&nbsp;</div>
+        <div class="bottom-control"><a id="masthead" href="/">Cornerstone Community Development Corporation</a>&nbsp;&nbsp;
+                &nbsp;</div>
+        <div class="bottom-control">
+          All rights reserved &nbsp;&nbsp;&nbsp;<i>Powered by 
+                </i>
+          <a id="webmaster" href="https://www.techhandie.com">TechHandie Corp.</a>
+        </div>
 
     
-<footer>
-    
-    <div  class="foot-menu">
+</footer>
+
+<!-- Old Footer
+<div  id ="foot-menu">
         <ul>
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a</li>
           <li><a href="/help">Help</a></li>
         </ul>
     </div>
-    <div class="bottom-control">
+    <div id ="bottom-control">
         <p>
             Copyright &copy; 2019 &nbsp;&nbsp;&nbsp;
             <a id="masthead" href="/">Cornerstone Community Development Corporation</a>&nbsp;&nbsp;
             &nbsp;All rights reserved &nbsp;&nbsp;&nbsp;<i>Powered by 
             </i><a id="webmaster" href="https://www.techhandie.com">TechHandie Corp.</a>
         </p>
-    </div>
-    
-</footer>
+</div>
+-->
 
 </div>
     

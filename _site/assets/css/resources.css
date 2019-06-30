@@ -1,39 +1,14 @@
-@import "variables";
-@import "bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat|Nova+Round|Nova+Square|Open+Sans|Pacifico|Raleway|Slabo+13px|Slabo+27px');
-:root {
-    --aqua = #428bca;
-    --cadet = #2b0680;
-    --clear = #f2f2f2;
-    --cobalt = #2b0680;
-    --corn-blue = #5612f4;
-    --crimson = #e82625;
-    --drk-grey = #2c2c2c;
-    --fade = #bfcecb;
-    --goldenrod = #f3c649;
-    --grey = #666666;
-    --lght-grey = #d4d4d4;
-    --md-grey = #5e5e5e;
-    --midnite = #120337;
-    --peas = #90a878;
-    --rose = #f28281;
-    --royal = #000099;
-    --turquoise = #007bff;
-    --water = #d0dac6;
-    --water-grey = #94ada8;
-}
+@import "main.css";
 
 
 /* Resources Begin */
 
-.directory {/* container */
+#directory {/* container */
     width: 100%;
-    height: 100%;
-    background: var(--water);/*#9DA1A2 white*/
-    padding-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0px solid;
+    background: #e6f5ff;/*cce5ff#d0dac6 #9DA1A2 white*/
+    /*padding-top: 0px;/*40px*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
     -webkit-box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);
     -moz-box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);/*rgba(247,247,247,1) */
     box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);
@@ -41,101 +16,117 @@
 
 #table-title {
     text-align: center;
-    font-family: Geneva, Tahoma, Verdana, san-serif;
+    font-family: 'Geneva', Tahoma, Verdana, san-serif;
     font-size: 2.25rem;
     font-weight: 600;
-    color: var(--cadet); /*#003399*/
+    color: #2b0680; /*#003399*/
     padding: 25px 0 25px 0;
     margin-left: 16.5%;
     margin-right: 20%;
 }
 
-table {
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-left: 7.5%;
-    margin-right: 30%;
+
+#table-responsive {
+    width: 100%;
+    padding-bottom: 30px;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
-.table-bordered {
-    border: 1px solid var(--cobalt);
+/*Overall Table*/
+.tbr {
+    width: 1300px;
+    background-color: #e6f5ff;
+    margin: 0 auto;/*0 10% 0 5%;*/
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-top: 1px solid #2b0690;
+    border-bottom: 1px solid #2b0690;
+    border-right: 1px solid #2b0690;
+    border-left: 1px solid #2b0690;
 }
 
-.table-responsive {/* table wrapper - must for responsivity */
-    background: var(--water); /*#9DA1A2 white*/
-    height: 100%;
-    margin-bottom: 100px;
+/*Heading*/
+.col-1.col-name {width: 20%;}/*315px*/
+.col-2.col-address {width: 20%;}/*126px*/
+.col-3.col-city {width: 10%;}/*87px*/
+.col-4.col-phone {width: 10%;}/*129px*/
+.col-5.col-contact {width: 20%;}/*201px*/
+.col-6.col-note {width: 20%;}/*418px*/
+
+.tbr th  {
+  padding: 10px 5px;
+  background-color: #003f87;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 0.875em;/*14px;*/
+  font-weight: 700;
+  overflow: hidden;
+  word-break: normal;
 }
 
-/* Table Header */
-.table-responsive thead tr th {
-    background: #6665cd;/* darkblue var(--midnite);*/
-    color: white;
-    text-align: center;
-    vertical-align: middle;
-    font-family: Arial, sans-serif;
-    font-size: 0.875em;
-    font-weight: normal;
-    border-color: var(--cobalt);
+/*Row Group Header*/
+.tbr .row-group {
+  background-color: #cce5ff;/*e6f5ff cbcefb*/
+  color: #2b0690; /*#00009b*/
+  text-align: left;
+  vertical-align: middle;
+  font-size: 1.0625em;
+  font-weight: 700;
+  border-right: 1px;
+  border-top: 1px solid #2b0690;
+  border-bottom: 1px solid #2b0690;
+}
+/*Data Cells*/
+.tbr td {
+  background-color:#e6f5ff;
+  font-family: Arial, sans-serif;
+  font-size: 0.8125em;/*14px*/
+  color: #2b0690;
+  padding: 10px 5px;
+  text-align: justify;
+  vertical-align: middle;
+  overflow: hidden;
+  word-break: normal;
+  border-bottom: 1px dotted #2b0690;
+  border-right: 1px dotted #2b0690;
 }
 
-/* Set Column widths based on these cells */
-th.col-1.col-name, td.col-1.col-name.row-group {
-  width: 20%;
-}
-th.col-2.col-address, td.col-2.col-address.row-group {
-  width: 20%;
-}
-th.col-3.col-city, td.col-3.col-city.row-group {
-  width: 10%;
-}
-th.col-4.col-phone, td.th.col-4.col-phone.row-group {
-  width: 10%;
-}
-th.col-5.col-contact, td.col-5.col-contact.row-group {
-  width: 20%;
-}
-th.col-6.col-note, td.col-6.col-note.row-group {
-  width: 20%;
+.tbr a.text-info {
+  color:#6665cd !important;
+  text-decoration: none;
 }
 
-/* Row Heading */
-.table-responsive .row-group {
-    background-color: #e7e9fd;/*cbcefb*/
-    color: var(--cobalt); /*#00009b*/
-    text-align: left;
-    vertical-align: middle;
-    font-size: 0.8125em;
-    font-weight: 700;
-    border-top: 1px solid var(--cobalt);
-    border-bottom: 1px solid var(--cobalt);
-    border-left: 0;
-    border-right: 0;
+.tbr a.text-info:hover {
+  font-size: 1.125em;
+  color: #f28281 !important;
 }
 
-/* Cell Data */
-.table-responsive td {
-    font-family: Arial, sans-serif;
-    color: var(--cobalt);
-    font-size: 0.75em;
-    padding: 10px 5px;
-    border-style: dotted;
-    border-width: 1px;
-    border-color: var(--cobalt);
-    text-align: left;
-    overflow: hidden;
-    vertical-align: middle;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+/*****************/
+/* Media Queries */	  
+/*****************/
+
+@media only screen and (max-width: 1300px) {
+    /*#table-responsive {padding-left: 50px; padding-right: 50px;}*/
+    
+    /*.tbr {margin: 0 auto;}*/
 }
 
-td a.text-info {
-    color: #6665cd !important;
-}
-
-td a.text-info:hover {
-    color: var(--rose) !important;
+/* For Phones */
+@media only screen and (max-width: 768px) {
+    /*#site-container {width: 100;}margin: 0 0 0 -50px;*/
+    
+    #directory {width: 100vw; margin: 0 0 0 -60px;}/*#e6f5ff*/
+    
+    #table-title {font-size: 1.5em;}
+    
+    
+    /*#table-responsive table {
+        margin:auto 0 auto 15px;
+        *overflow-x: scroll;*
+        *word-wrap: break-word;*
+        *white-space: nowrap;*
+    } #d0dac6*/
 }
 
 /*-- Resources End --*/
