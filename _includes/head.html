@@ -2,14 +2,24 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
 <meta name="description" content="{{ page.title }}">
+<!--Google metadata -->
+<meta name="google-site-verification" content="FfTvgcLQmP0FxHeND1V7r59DeB7KNPyvKlpgZivQq24" />
+
+{% feed_meta %}
+
 <title>{{ page.title }}</title>
 
 <!--Assign Specific Page CSS-->
-  {% if page.custom_css %}
-    {% for stylesheet in page.custom_css %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css">
-    {% endfor %}
-  {% endif %}
+{% if page.custom_css %}
+  {% for stylesheet in page.custom_css %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css"/>
+  {% endfor %}
+{% endif %}
+
+<!-- Open Graph Tags -->
+{% include og.html %}
+
+
 
 <!-- CDN Styling Resources-Font -->
 <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Nova+Round|Nova+Square|Open+Sans|Pacifico|Raleway|Slabo+13px|Slabo+27px" rel="stylesheet">
@@ -19,9 +29,23 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
 
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+
+<!--Canonical URL -->
+<link rel="canonical" href="{{ page.url | prepend: site.url }}"/>
+
+
 <!-- CSS -->
 <link rel="stylesheet" href="../assets/css/main.css" type="text/css">
+
+<!-- SEO Tag Setup -->
+{% seo %}

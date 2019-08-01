@@ -1,4 +1,8 @@
 ---
 layout: default
+share_url: {{ site.url | prepend: page.url }}
+share_title: {{ page.title }}
 ---
+
 {{ content }}
+{% include  share.html %}

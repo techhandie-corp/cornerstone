@@ -109,7 +109,9 @@ img.img-responsive {padding-bottom: -30px;}
 
 /* For Tablet */
 @media only screen and (max-width: 1300px) {
-    
+
+    html {width: 100vw;}
+
     #partnership .caption {font-size: 0.85em; line-height: 1.25;}
     
     #partnership {
@@ -205,7 +207,7 @@ img.img-responsive {padding-bottom: -30px;}
   .p5 {
       grid-row: 7/8;
       grid-column: 1/2;
-      margin-left: 200px;
+      margin-left: 225px;
   }  
   
 }

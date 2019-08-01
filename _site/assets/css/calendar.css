@@ -1,5 +1,7 @@
 @import "main.css";
 
+#site-container {width: 100%;}
+
 /* Community Calendar Begins */
 
 #community_calendar {
@@ -8,9 +10,9 @@
     -webkit-box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);
     -moz-box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);/*rgba(247,247,247,1) */
     box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     width: 100%;
-    height: 1290px;
+    height: auto;
     content: center;
 }
 
@@ -21,24 +23,41 @@
     font-weight: 600;
     color: #6688EE; /*$water #d0dac6*/
     text-align: center;
+    margin: -20px 0 0 -80px ;
 }
 
-.calendar-wrap {margin: 0;}
+.calendar-wrap {margin: 30px 5% 0 14%;}
 
 
 /* Media Queries */
 
+/* For Tablet */
+@media only screen and (max-width: 1300px) {
+    #site-container {width: 100%; margin: 0 0 0 -80px;}/*{width: 100vw; margin: 0 0 0 -50px;}*/
+
+    #community_calendar {width: 100%; height: auto;}/*margin: -40px 0px 20px 0px;  margin: -30 -60 0 -80 height: 575px;*/
+
+    #community_calendar .jumbotron {padding-left: 87px; height: auto; margin: 0 auto;} /*border: 3px dashed fuchsia;*/
+
+    .calendar-wrap {margin: 30px 0 0 0;}
+
+    #community_calendar .title {margin-left: -73px;}
+}
+
+/* For Phone */
 @media only screen and (max-width: 768px) {
 
-    #community_calendar {width: 375px; height: 575px; margin: -40px -40px 20px -75px;}/*margin: -30 -60 0 -80 height: 575px;*/
-    
+    #site-container {width: 100vw; margin: 0 0 0 -50px;}
+
+    #community_calendar {width: 100%; height: auto; margin: -40px 0px 20px 0px;}/*margin: -30 -60 0 -80 height: 575px;*/
+
     #community_calendar .jumbotron {padding: 20px 0px 20px 10px; height: auto; margin: 0 auto; /*border: 3px dashed fuchsia;*/}
     
-    #community_calendar iframe {width: 150%; height: 75vh;}
+    #community_calendar iframe {width: 180%; height: 100vh;}/* 150% */
     
     .calendar-wrap {padding: 20px; margin: 0 auto; overflow: auto; /*border: 3px double royalblue;*/}
     
-    #community_calendar .title {font-size: 1.375em; text-align: center; padding: 0 0 0 20px;}
+    #community_calendar .title {font-size: 1.375em; text-align: center; padding: 20px 0 0 20px;}
 }
 
 

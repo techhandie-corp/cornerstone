@@ -3,7 +3,7 @@
 /* Internship Page Begins */
 
 #internship {
-    width: 100%;
+    width: 100%; /*100vw%*/
     background-color: rgba(35,107,142,0.35);/* rgba(85,57,130,0.5) */
     border: 0px solid;
     border-radius: 60px;
@@ -12,6 +12,7 @@
     box-shadow: 0px 3px 84px 10px rgba(247,247,247,1);
     color: #E0EEEE;
     padding-top: 40px;
+
 }
 
 #internship .title {
@@ -98,15 +99,26 @@ figcaption span {
 
 /* For Phone */
 @media only screen and (max-width: 768px) {
-    #internship {width: 100vw; margin-top: -20px; margin-left: -60px; border-radius: 0;}
+
+    html {width: 100vw;}
+
+    #site-container {padding: 0 !important;} /*width: 100%;*/
+
+    .header-container {padding-left: 30px;}
+
+    footer {padding-left: 60px;}
+
+    #internship {margin-top: -30px; border-radius: 0;}
     
-    #internship .block {margin: 0;}
+    #internship .block {margin: 0 0 0 20px;}
     
-    #internship .title {font-size: 1.7em; text-align: left; padding-left: 20px; padding-right: 8px;}
+    #internship .title {font-size: 1.7em; text-align: left; padding-left: 20px; padding-right: 8px; margin-left: 20px;}
     
-    #internship .subtitle {font-size: 1.5em; text-align: left; padding-left: 20px; margin-top: 10 px;}
+    #internship .subtitle {font-size: 1.5em; text-align: left; padding-left: 20px; margin-top: 10px; margin-left: 20px;}
     
     #internship p {font-size: 1em;}
+
+    .wall {margin-top: 50px;}
 }
 
 /* Internship Page Ends */

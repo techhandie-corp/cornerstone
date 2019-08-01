@@ -114,19 +114,17 @@
 
 /* For Phones */
 @media only screen and (max-width: 768px) {
-    /*#site-container {width: 100;}margin: 0 0 0 -50px;*/
+
+    html{width: 100vw;}
+
+    #site-container {width: 100vw;}
     
-    #directory {width: 100vw; margin: 0 0 0 -60px;}/*#e6f5ff*/
+    #directory {width: 100%; margin: 0 0 0 0px;}/*#e6f5ff*/
+
+    .table-responsive {width: 110%;}
     
     #table-title {font-size: 1.5em;}
     
-    
-    /*#table-responsive table {
-        margin:auto 0 auto 15px;
-        *overflow-x: scroll;*
-        *word-wrap: break-word;*
-        *white-space: nowrap;*
-    } #d0dac6*/
 }
 
 /*-- Resources End --*/

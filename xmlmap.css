@@ -1,0 +1,21 @@
+@import "main.css";
+
+html {min-height: 100%;}
+
+body {min-height: 100%;}
+
+#site-container {width: 100%; min-height: 100%;}
+
+/* Sitemap Begins */
+
+urlset {background: transparent;}
+
+ul {font-size: 1.25em; color: indigo;}
+
+loc {color: #bd2130;}
+
+lastmod {color: #120337;}
+
+changefreq {color: #120337;}
+
+priority {color: #120337;}

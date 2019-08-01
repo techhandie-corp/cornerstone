@@ -161,5 +161,9 @@ table.events th.col-attachment,table.events td.attachment {width: 5%;overflow:hi
     table.events {margin-left: 0; margin-right: 0;}
 }
 
+/* For Phones */
+@media only screen and (max-width: 768px) {
+    #site-container {width: 100% !important;}
+}
 
 /* Events Table Ends */

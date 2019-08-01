@@ -37,7 +37,7 @@
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
-    
+    html {width: 100vw;}
     #site-container {padding: 0 !important;}
     .header-container {padding-left: 50px;}
     footer {padding-left: 50px;}
