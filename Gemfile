@@ -11,7 +11,7 @@ end
 
 group :development, :test do
   # Test your rendered HTML files to make sure they're accurate
-  gem 'html-proofer', '~> 3.9'
+  gem 'html-proofer', '3.11.1'
 end
 
 group :jekyll_plugins do
