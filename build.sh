@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e
-DEPLOY_REPO="https://${DEPLOY_SITE_TOKEN}@github.com/techandie-corp.github.io/cornerstone.git"
+DEPLOY_REPO="https://${DEPLOY_SITE_TOKEN}@github.com/TechHandieCorp/cornerstone.git"
+# "https://${DEPLOY_SITE_TOKEN}@github.com/techandie-corp.github.io/cornerstone.git"
 function main {
 clean
 get_current_site
