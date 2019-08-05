@@ -7,8 +7,10 @@ cache:
 install:
   - bundle install
 before_script:
-  - npm install -g bower
-  - bower install
+  - npm init --force
+  - npm install bootsrap
+  - npm install jquery
+  - npm install popper.js
   - chmod +x ./build.sh
 script: bash "./build.sh"
 env:
