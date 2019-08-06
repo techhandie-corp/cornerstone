@@ -4,7 +4,7 @@ set -e # Exit with nonzero exit code if anything fails
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
-DEPLOY_REPO="https://github.com/TechHandieCorp/cornerstone.git"
+DEPLOY_REPO="https://github.com/techhandie-corp/cornerstone.git"
 # "https://${DEPLOY_SITE_TOKEN}@github.com/techandie-corp.github.io/cornerstone.git"
 function main {
 clean
