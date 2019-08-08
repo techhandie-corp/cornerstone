@@ -20,7 +20,7 @@ function get_current_site {
 echo "getting latest site"
 git clone --depth 1 $DEPLOY_REPO _site
 cd _site
-git fetch
+git fetch $SOURCE_BRANCH
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 find -maxdepth 1 ! -name .git ! -name . | xargs rm -rf
 cd ..
