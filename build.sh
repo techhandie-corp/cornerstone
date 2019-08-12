@@ -27,7 +27,7 @@ if [ -d "_site" ]; then rm -Rf _site; fi
 function get_current_site {
 echo "getting latest site"
 # Clone local repo directory to remote repo directory
-git clone $DEPLOY_REPO/_site https://github.com/TechHandieCorp/cornerstone/_site
+git clone $DEPLOY_REPO/_site https://github.com/techhandie-corp/cornerstone/_site
 cd _site
 git fetch $SOURCE_BRANCH
 git checkout -b $TARGET_BRANCH master/$SOURCE_BRANCH || git checkout --orphan $TARGET_BRANCH
