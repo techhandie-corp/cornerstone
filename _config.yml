@@ -11,12 +11,19 @@ exclude:
     - next_steps.md
     - next_steps.css
 
+Keep files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
+
 #Site Settings
 title: Cornerstone Community Development Corporation
 owner: Cornerstone Community Development Corporation
 email: systemadmin@cdccornerstone.org
 description: Cornerstone Community Development Corporation (Cornerstone) is a faith-based 501(c) (3), non-profit organization, serving Bergen County, New Jersey, whose purpose is to meet the needs in the community through entrepreneurship, partnership, and education.
-url: "https://www.cdccornerstone.org/" #actual site url https://kayceejjay.github.io not CNAME if one used; http://localhost:63342/Cornerstone/Cornerstone/ https://kens-coding-kayceejjay.c9users.io/ in development
+url: "https://techhandie-corp.github.io/cornerstone/"
+# Use actual Github site url not CNAME, if one used;
+# CNAME - "https://www.cdccornerstone.org/"  http://localhost:63342/Cornerstone/Cornerstone/ https://kens-coding-kayceejjay.c9users.io/ in development
 baseurl: ""
 webmaster: TechHandie Corporation
 webmaster_email: admin@techhandie.com

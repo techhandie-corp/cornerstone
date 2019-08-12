@@ -1,27 +1,36 @@
 #!/usr/bin/env bash
 set -e # Exit with nonzero exit code if anything fails
 
+# Source master will build site
+# Copy _site folder from local master
+# To Github gh-pages branch
+
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
+# Git content SOURCE
 DEPLOY_REPO="https://github.com/techhandie-corp/cornerstone.git"
 # "https://${DEPLOY_SITE_TOKEN}@github.com/techandie-corp.github.io/cornerstone.git"
 function main {
 clean
 get_current_site
 build_site
+deploy
 }
 function clean {
-  # Remove _sit folder content & folder
+  # Remove _sit folder content & folder in TATGET
 echo "cleaning _site folder"
 if [ -d "_site" ]; then rm -Rf _site; fi
 }
+
+# Clone
 function get_current_site {
 echo "getting latest site"
-git clone --depth 1 $DEPLOY_REPO _site
+# Clone local repo directory to remote repo directory
+git clone $DEPLOY_REPO/_site https://github.com/TechHandieCorp/cornerstone/_site
 cd _site
 git fetch $SOURCE_BRANCH
-git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
+git checkout -b $TARGET_BRANCH master/$SOURCE_BRANCH || git checkout --orphan $TARGET_BRANCH
 find -maxdepth 1 ! -name .git ! -name . | xargs rm -rf
 cd ..
 }
@@ -29,7 +38,6 @@ function build_site {
 echo "building site"
 bundle exec jekyll build
 }
-main
 
 # Actual Deployment Steps
 function deploy {
@@ -52,3 +60,5 @@ git commit -m "Lastest site built on successful travis build $TRAVIS_BUILD_NUMBE
 github"
 git push $DEPLOY_REPO master:gh-pages
 }
+
+main
