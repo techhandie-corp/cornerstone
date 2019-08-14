@@ -15,8 +15,8 @@ DEPLOY_REPO="https://github.com/techhandie-corp/cornerstone.git"
 function main {
 clean
 build_site
-get_current_site
-# deploy
+# get_current_site
+deploy
 }
 function clean {
   # Remove _sit folder content & folder in TATGET
