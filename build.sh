@@ -37,7 +37,7 @@ echo "getting latest site"
 # git clone $DEPLOY_REPO https://github.com/TechHandieCorp/cornerstone/
 git clone -n https://github.com/techhandie-corp/cornerstone.git https://github.com/TechHandieCorp/cornerstone.git --depth 1
 cd _site
-git checkout HEAD _site/*
+git checkout HEAD "./_site/"
 # git fetch $SOURCE_BRANCH
 # git checkout -b gh-pages $SOURCE_BRANCH _site
 cd ..
