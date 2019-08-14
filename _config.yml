@@ -36,9 +36,12 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - github-pages
+  - jekyll-github-metadata
 
 #Key Paths
 assets:
+  load_paths:
     - attachments
     - css
     - fonts

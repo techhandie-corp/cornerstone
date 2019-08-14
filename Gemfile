@@ -18,7 +18,11 @@ group :jekyll_plugins do
   gem 'jekyll-feed'
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
+  gem 'github-pages'
 end
+
+
+gem 'jekyll-github-metadata'
 
 #Controls timezone conversion
 gem 'tzinfo', '~> 1.2'
