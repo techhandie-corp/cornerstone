@@ -11,11 +11,12 @@ TARGET_BRANCH="gh-pages"
 # Git content SOURCE
 DEPLOY_REPO="https://github.com/techhandie-corp/cornerstone.git"
 # "https://${DEPLOY_SITE_TOKEN}@github.com/techandie-corp.github.io/cornerstone.git"
+
 function main {
 clean
-get_current_site
 build_site
-deploy
+get_current_site
+# deploy
 }
 function clean {
   # Remove _sit folder content & folder in TATGET
@@ -24,40 +25,47 @@ if [ -d "_site" ]; then rm -Rf _site; fi
 }
 
 # Clone
+
+#
+# git clone project/ subproject/
+# cd subproject
+# git filter-branch --prune-empty --subdirectory-filter dirB HEAD
+#
 function get_current_site {
 echo "getting latest site"
 # Clone local repo directory to remote repo directory
-git clone $DEPLOY_REPO/_site https://github.com/TechHandieCorp/cornerstone/_site
+# git clone $DEPLOY_REPO https://github.com/TechHandieCorp/cornerstone/
+git clone -n git://github.com/techhandie-corp/cornerstone TechHandieCorp/cornerstone.git --depth 1
 cd _site
-git fetch $SOURCE_BRANCH
-git checkout -b gh-pages $SOURCE_BRANCH _site
+git checkout HEAD _site/*
+# git fetch $SOURCE_BRANCH
+# git checkout -b gh-pages $SOURCE_BRANCH _site
 cd ..
 }
+
 function build_site {
 echo "building site"
 bundle exec jekyll build
+bundle exec jekyll serve
 }
 
 # Actual Deployment Steps
 function deploy {
   # Ignore pull requests
 echo "deploying changes"
-if [ -z "$TRAVIS_PULL_REQUEST" ]; then
-echo "except don't publish site for pull requests"
-exit 0
-fi
-if [ "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
-echo "except we should only publish the master branch. stopping here"
-exit 0
-fi
+
+# On Local Machine
+#
 cd _site
-git config --global user.name "techhandie-corp"
-git config --global user.email admin@techhandie.com
-git add -A
-git status
-git commit -m "Lastest site built on successful travis build $TRAVIS_BUILD_NUMBER auto-pushed to
-github"
-git push $DEPLOY_REPO master:gh-pages
+
+git init
+git remote add origin -f https://github.com/TechHandieCorp/cornerstone/
+
+# enable this
+git config core.sparseCheckout true
+
+cat >> .git/info/sparsecheckout _site
+git pull origin master
 }
 
 main
