@@ -55,7 +55,7 @@ echo "deploying changes"
 
 # On Local Machine
 #
-cd _site
+cd C:\Users\Kenneth\RubymineProjects\cornerstone\_site
 
 git init
 git remote add origin -f https://github.com/TechHandieCorp/cornerstone/
