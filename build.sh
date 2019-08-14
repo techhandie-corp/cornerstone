@@ -63,7 +63,7 @@ git remote add origin -f https://github.com/TechHandieCorp/cornerstone/
 # enable this
 git config core.sparseCheckout true
 
-cat >> .git/info/sparsecheckout ./_site/
+cat >> .git/info/sparsecheckout ~/_site
 git pull origin master
 }
 
