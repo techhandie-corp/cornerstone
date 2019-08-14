@@ -35,7 +35,7 @@ function get_current_site {
 echo "getting latest site"
 # Clone local repo directory to remote repo directory
 # git clone $DEPLOY_REPO https://github.com/TechHandieCorp/cornerstone/
-git clone -n git://github.com/techhandie-corp/cornerstone TechHandieCorp/cornerstone.git --depth 1
+git clone -n https://github.com/techhandie-corp/cornerstone.git https://github.com/TechHandieCorp/cornerstone.git --depth 1
 cd _site
 git checkout HEAD _site/*
 # git fetch $SOURCE_BRANCH
