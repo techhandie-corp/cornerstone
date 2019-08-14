@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.4.2'
 
 gem 'jekyll', '>= 3.8.6'
-gem 'nokogiri', '1.10.3'
+gem 'nokogiri', '>=1.6.8.1'
 
 group :development do
   # Get error feedback during development
