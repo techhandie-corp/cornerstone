@@ -46,7 +46,6 @@ cd ..
 function build_site {
 echo "building site"
 bundle exec jekyll build
-bundle exec jekyll serve
 }
 
 # Actual Deployment Steps
