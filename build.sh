@@ -16,8 +16,10 @@ function main {
 clean
 build_site
 # get_current_site
-deploy
+# deploy
+sync
 }
+
 function clean {
   # Remove _sit folder content & folder in TATGET
 echo "cleaning _site folder"
@@ -36,16 +38,24 @@ echo "getting latest site"
 # Clone local repo directory to remote repo directory
 # git clone $DEPLOY_REPO https://github.com/TechHandieCorp/cornerstone/
 git clone -n https://github.com/techhandie-corp/cornerstone.git https://github.com/TechHandieCorp/cornerstone.git --depth 1
-cd _site
-git checkout HEAD "./_site/"
+
+git checkout -b gh-pages
+mkdir _site
+
 # git fetch $SOURCE_BRANCH
 # git checkout -b gh-pages $SOURCE_BRANCH _site
-cd ..
+
+cd _site
 }
 
 function build_site {
 echo "building site"
 bundle exec jekyll build
+}
+
+# Deploy with rsync
+function sync {
+  rsync -avzn ./_site git@github.com:techhandie-corp/cornerstone.git:/_site/
 }
 
 # Actual Deployment Steps
@@ -55,7 +65,7 @@ echo "deploying changes"
 
 # On Local Machine
 #
-cd "C:\Users\Kenneth\RubymineProjects\cornerstone\_site"
+cd _site
 
 git init
 git remote add origin -f https://github.com/TechHandieCorp/cornerstone/
