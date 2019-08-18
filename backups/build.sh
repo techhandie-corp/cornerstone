@@ -16,8 +16,8 @@ function main {
 clean
 build_site
 # get_current_site
-# deploy
-sync
+deploy
+# sync
 }
 
 function clean {
