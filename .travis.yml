@@ -10,7 +10,7 @@ install:
 deploy:
   provider: pages
   skip_cleanup: true
-  # github_token: $GITHUB_TOKEN
+  github_token: $GITHUB_TOKEN
   local_dir: _site
   target_branch: master
   on:
@@ -19,7 +19,7 @@ deploy:
 env:
   global:
     #- NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-    secure: 1f17321c50c71648146da0d69d82acae44fe6697
+    # secure: 1f17321c50c71648146da0d69d82acae44fe6697
 
 sudo: false
 
