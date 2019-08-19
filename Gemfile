@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 ruby '2.4.2'
 
+# We'll need rake to build our site in TravisCI
+gem 'rake', '>=12'
 gem 'jekyll', '>= 3.8.6'
 gem 'nokogiri', '>=1.6.8.1'
 
