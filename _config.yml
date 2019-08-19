@@ -12,6 +12,8 @@ exclude:
     - next_steps.md
     - next_steps.css
 
+exclude: [Rakefile]
+
 Keep files:
   - "CNAME"
   - ".git"
