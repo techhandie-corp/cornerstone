@@ -1,0 +1,57 @@
+exclude:
+    - "/vendor/"
+    - Gemfile
+    - Gemfile.lock
+    - Rakefile
+    - LICENSE
+    - README.md
+    - package.json
+    - package-lock.json
+    - yarn.lock
+    - backups
+    - next_steps.md
+    - next_steps.css
+
+exclude: [Rakefile]
+
+Keep files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
+
+#Site Settings
+title: Cornerstone Community Development Corporation
+owner: Cornerstone Community Development Corporation
+email: systemadmin@cdccornerstone.org
+description: Cornerstone Community Development Corporation (Cornerstone) is a faith-based 501(c) (3), non-profit organization, serving Bergen County, New Jersey, whose purpose is to meet the needs in the community through entrepreneurship, partnership, and education.
+url: "https://techhandie-corp.github.io/cornerstone/"
+# Use actual Github site url not CNAME, if one used;
+# CNAME - "https://www.cdccornerstone.org/"  http://localhost:63342/Cornerstone/Cornerstone/ https://kens-coding-kayceejjay.c9users.io/ in development
+baseurl: ""
+webmaster: TechHandie Corporation
+webmaster_email: admin@techhandie.com
+webmaster_url: "https://www.techhandie.com"
+
+#Build Settings
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-github-metadata
+
+#Key Paths
+assets:
+  #load_paths:
+    - attachments
+    - css
+    - fonts
+    - images
+    - videos
+
+sass:
+  sass_dir: _sass
+  load_paths:
+    - _sass
+    - node_modules

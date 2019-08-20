@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Google Sitmaps Stylesheets (GSStylesheets)
-     Project Home: http://sourceforge.net/projects/gstoolbox
-     Copyright (c) 2005 Baccou Bonneville SARL (http://www.baccoubonneville.com)
-     License http://www.gnu.org/copyleft/lesser.html GNU/LGPL
+     Project Home: https://sourceforge.net/projects/gstoolbox
+     Copyright (c) 2005 Baccou Bonneville SARL (https://www.baccoubonneville.com)
+     License https://www.gnu.org/copyleft/lesser.html GNU/LGPL
      
      Created by Serge Baccou
      1.0 / 20 Aug 2005
        
-     Changes by Johannes Müller (http://GSiteCrawler.com)
+     Changes by Johannes Müller (https://GSiteCrawler.com)
      1.1 / 20 Aug 2005 - sorting by clicking on column headers
                        - open urls in new window/tab 
                        - some stylesheet/CSS cleanup 
        
-     Changes by Tobias Kluge (http://enarion.net)
+     Changes by Tobias Kluge (https://enarion.net)
      1.2 / 22 Aug 2005 - moved sitemap file and sitemap index file into one file gss.xsl
      
      Changes by Serge Baccou
@@ -22,9 +22,9 @@
                        - sorting is working for siteindex (see gss.js) -->
 
 <xsl:stylesheet version="2.0" 
-                xmlns:html="http://www.w3.org/TR/REC-html40"
-                xmlns:sitemap="http://www.google.com/schemas/sitemap/0.84"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                xmlns:html="https://www.w3.org/TR/REC-html40"
+                xmlns:sitemap="https://www.google.com/schemas/sitemap/0.84"
+                xmlns:xsl="https://www.w3.org/1999/XSL/Transform">
   
   <xsl:output method="html" version="1.0" encoding="iso-8859-1" indent="yes"/>
   
@@ -33,7 +33,7 @@
     <html>     
       <head>  
         <title>Google Sitemap File</title>
-        <link href="http://www.google.com/webmasters/sitemaps/docs/sitemaps.css" type="text/css" rel="stylesheet"/>
+        <link href="https://www.google.com/webmasters/sitemaps/docs/sitemaps.css" type="text/css" rel="stylesheet"/>
         <link href="gss.css" type="text/css" rel="stylesheet"/>
         <script src="gss.js"></script>  
       </head>
@@ -50,7 +50,7 @@
       <body onLoad="initXsl('table0','{$fileType}');">  
             
         <!-- Logo -->
-        <a href="http://www.baccoubonneville.com/blogs/index.php/webdesign/2005/08/20/google-sitemaps-stylesheets">
+        <a href="https://www.baccoubonneville.com/blogs/index.php/webdesign/2005/08/20/google-sitemaps-stylesheets">
           <h1 id="gssTitle">Google Sitemaps Stylesheet 1.4</h1>         
         </a><br/>                      
           
@@ -67,11 +67,11 @@
         <table class="copyright" id="table_copyright">
           <tr>
             <td>
-              <p>Google Sitemaps: © 2005 <a href="http://www.google.com">Google</a> - <a href="https://www.google.com/webmasters/sitemaps/stats">My Sitemaps</a> - <a href="http://www.google.com/webmasters/sitemaps/docs/en/about.html">About</a> - <a href="http://www.google.com/webmasters/sitemaps/docs/en/faq.html">FAQ</a> - <a href="http://groups-beta.google.com/group/google-sitemaps">Discussion</a> - <a href="http://sitemaps.blogspot.com/">Blog</a></p>                                  
+              <p>Google Sitemaps: © 2005 <a href="https://www.google.com">Google</a> - <a href="https://www.google.com/webmasters/sitemaps/stats">My Sitemaps</a> - <a href="https://www.google.com/webmasters/sitemaps/docs/en/about.html">About</a> - <a href="https://www.google.com/webmasters/sitemaps/docs/en/faq.html">FAQ</a> - <a href="https://groups-beta.google.com/group/google-sitemaps">Discussion</a> - <a href="https://sitemaps.blogspot.com/">Blog</a></p>
               
-              Google Sitemaps Stylesheets: © 2005 <a href="http://www.baccoubonneville.com">Baccou Bonneville</a> - <a href="http://sourceforge.net/projects/gstoolbox">Project</a> - <a href="http://www.baccoubonneville.com/blogs/index.php/webdesign/2005/08/20/google-sitemaps-stylesheets">Blog</a><br/>
-              Contributions: Johannes Müller, SOFTPlus <a href="http://gsitecrawler.com">GSiteCrawler</a> - Tobias Kluge, enarion.net <a href="http://enarion.net/google/phpsitemapng">phpSitemapNG</a>
-              <p><a href="http://www.gnu.org/copyleft/lesser.html"><img src="http://www.baccoubonneville.com/images/stories/80x15/lgpl.jpg" alt="LGPL" border="0"/></a>&#x0020;<a href="http://sourceforge.net/projects/gstoolbox"><img src="http://www.baccoubonneville.com/images/stories/80x15/sourceforge.jpg" alt="SourceForge.net" border="0"/></a></p>
+              Google Sitemaps Stylesheets: © 2005 <a href="https://www.baccoubonneville.com">Baccou Bonneville</a> - <a href="https://sourceforge.net/projects/gstoolbox">Project</a> - <a href="https://www.baccoubonneville.com/blogs/index.php/webdesign/2005/08/20/google-sitemaps-stylesheets">Blog</a><br/>
+              Contributions: Johannes Müller, SOFTPlus <a href="https://gsitecrawler.com">GSiteCrawler</a> - Tobias Kluge, enarion.net <a href="https://enarion.net/google/phpsitemapng">phpSitemapNG</a>
+              <p><a href="https://www.gnu.org/copyleft/lesser.html"><img src="https://www.baccoubonneville.com/images/stories/80x15/lgpl.jpg" alt="LGPL" border="0"/></a>&#x0020;<a href="https://sourceforge.net/projects/gstoolbox"><img src="https://www.baccoubonneville.com/images/stories/80x15/sourceforge.jpg" alt="SourceForge.net" border="0"/></a></p>
             </td>
           </tr>
         </table>

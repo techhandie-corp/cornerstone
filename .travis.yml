@@ -20,8 +20,8 @@ env:
   global:
     #- NOKOGIRI_USE_SYSTEM_LIBRARIES=true
     # secure: 1f17321c50c71648146da0d69d82acae44fe6697
-    $GITHUB_TOKEN=02e6d90d7da514a422675f14428dbd3f32fa5372
-
+    api_key:
+      secure=02e6d90d7da514a422675f14428dbd3f32fa5372
 
 sudo: false
 

@@ -1,7 +1,7 @@
 /* Google Sitmaps Stylesheets (GSStylesheets) JavaScript
-   License http://www.gnu.org/copyleft/lesser.html GNU/LGPL
+   License https://www.gnu.org/copyleft/lesser.html GNU/LGPL
 
-   Created by Johannes Mueller (http://gsitecrawler.com)
+   Created by Johannes Mueller (https://gsitecrawler.com)
    1.0 / 21 Aug 2005 - based on ideas by "ameba" / via experts-exchange
 
    Changes by Serge Baccou
