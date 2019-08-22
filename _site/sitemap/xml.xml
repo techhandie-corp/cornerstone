@@ -152,252 +152,259 @@
     
     <url>
         <loc>/about/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/calendar/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/contact-info/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/donation/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/education/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/events/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/events/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>/help/</loc>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/highlights.html</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/internship/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/leadership/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/backups/main.1.css</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/assets/css/main.css</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/mission/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/next_steps/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/operation-re-boot.html</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/backups/page.1.html</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/partnership/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/backups/primary%20pages.html</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/purpose/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/resources/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/scholarship.html</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/search.html</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/showcase/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/showcase-carousel/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/showcase-request/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/showcase/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/showcase/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/site_map/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/sitemap/xml</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/symposium.html</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/testimonial/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/thank-you/</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/sitemap.xml</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/robots.txt</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/feed.xml</loc>
-        <lastmod>2019-08-19</lastmod>
+        <lastmod>2019-08-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
