@@ -1,0 +1,91 @@
+@import "main.css";
+
+/* Community News Start */
+
+#community-news {
+    width: 100%;
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);
+    -moz-box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);/*rgba(247,247,247,1) */
+    box-shadow: 0px 3px 84px 10px rgba(224,238,238,1);
+    background-color: #B0E0E6;
+    margin-top: 25px;
+    padding-bottom: 265px;
+}
+
+#community-news h1 {
+    color: #120A8F; /*ultramarine see https://www.december.com/html/spec/color3.html*/
+    text-align: center;
+    font-weight: 500;
+    padding: 40px 0 30px 0;
+}
+
+#community-news .container {
+    width: 100%;
+    padding-top: 10px;
+    padding: 40px;
+}
+
+#community-news table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+table.highlights thead {
+    font-family:'Montserrat', sans-serif;
+    color: #120A8F;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 5px;
+    word-break:normal;
+    text-align:justify;
+    vertical-align: middle;
+    border-top: 1px solid slateblue;
+    border-bottom: 1px solid slateblue;
+    margin-bottom: 30px;
+}
+
+.row1 {
+    padding-top: 20px;
+}
+
+/* Set column widths */
+table.highlights th.col-n, table.highlights td.col-n {width: 5%; overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
+table.highlights th.col-t, table.highlights td.col-t {width: 50%; overflow:hidden; white-space: nowrap; text-overflow: ellipsis;text-align: center;}
+table.highlights th.col-d, table.highlights td.col-d {width: 20%; overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
+table.hightlights th.col-a,table.highlights td.col-a {width: 5%; overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
+
+table.highlights td {
+    color: darkslateblue;
+    font-family:'Slabo27px', sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+    /*padding: 20px;*/
+    word-break:normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    text-align: left;
+    border: none;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+table.highlights tr:hover {
+    background-color: #f7f7f7; /* #ffff99 */
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    #community-news {width: 100vw; margin-left: -60px; padding-bottom: -50px; border-radius: 0;}
+    
+    #community-news .container {padding: 0 5px; margin: 0; overflow: auto;}
+    
+    table.highlights {padding: 0; margin: 0;}
+    
+    td.col-n {text-align: right;}
+}
+
+/*-- Community News End --*/
