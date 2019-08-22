@@ -1,0 +1,53 @@
+@import "main.css";
+
+/* Help Page */
+
+  .weighty {font-weight: 700;}
+
+  .shine {filter: brightness(110%);}
+
+  html {width: 100vw;}
+
+  #site-container {padding: 0 !important; margin: 0 auto;}
+
+  #help {/* post-248 */
+    width:100vw; /*100vw*/
+    height:100vh;
+    background-image: url('http://juicedbyj.com/wp-content/uploads/2019/02/tools-864983_1920.jpg');
+    margin-top: 20px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    padding-top: 50px;
+    padding-left: 30px;
+  }
+
+  .help-block {margin: 80px 0;}
+  .content {margin-right:80px;}
+
+  #help-title {
+    font-family:'Open Sans';
+    text-align:center;
+    color: #ff4d4d;
+    font-size:3.125em;
+    /*line-height:2;*/
+    padding-bottom: 20px;
+  }/*#ebc7eb,ff6666,#ff4d4d*/
+
+  p.content {text-align:justify; color:#d8fcb2;font-size:1.5em;font-weight:800;line-height:2;}
+
+  /* Media Queries */
+
+  @media only screen and (max-width: 768px) {
+
+    /*.header-container {padding-left: 50px;}*/
+
+    #primary {display:block; margin-top:-135px;}
+
+    #help {width: 100%; height: 100%; display: block; margin-left: auto; margin-right: auto; padding-top:40px; padding-bottom:80px;}
+
+    #help-title {text-align: justify; font-size: 1.75em; color: tomato; padding-left: 20px; margin-top: 0; padding-bottom: 5px;}
+
+    #help p.content {text-align: justify; color:#d8fcb2;font-size:1em; font-weight:800; line-height:1.25; padding-left: 20px;}
+
+  }
