@@ -13,7 +13,7 @@
   #help {/* post-248 */
     width:100vw; /*100vw*/
     height:100vh;
-    background-image: url('http://juicedbyj.com/wp-content/uploads/2019/02/tools-864983_1920.jpg');
+    background-image: url('https://juicedbyj.com/wp-content/uploads/2019/02/tools-864983_1920.jpg');
     margin-top: 20px;
     background-size: cover;
     background-repeat:no-repeat;
@@ -40,7 +40,7 @@
 
   @media only screen and (max-width: 768px) {
 
-    /*.header-container {padding-left: 50px;}*/
+    .header-container {padding-left: 40px;}
 
     #primary {display:block; margin-top:-135px;}
 
@@ -49,5 +49,7 @@
     #help-title {text-align: justify; font-size: 1.75em; color: tomato; padding-left: 20px; margin-top: 0; padding-bottom: 5px;}
 
     #help p.content {text-align: justify; color:#d8fcb2;font-size:1em; font-weight:800; line-height:1.25; padding-left: 20px;}
+
+    footer {padding-left: 40px;}
 
   }
