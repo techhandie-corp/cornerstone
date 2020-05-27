@@ -130,7 +130,7 @@ DEPENDENCIES
   jekyll-github-metadata
   jekyll-seo-tag
   jekyll-sitemap
-  nokogiri (>= 1.10.4)
+  nokogiri (>= 1.10.8)
   rake (>= 12)
   rubocop-jekyll
   tzinfo (>= 1.2)
